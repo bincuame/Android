@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".screen.PhongBanScreen">
+
+    <LinearLayout
+        android:id="@+id/layoutLine"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#0A90CD">
+        <ImageView
+            android:id="@+id/imgReturn"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/returner"
+            android:layout_marginLeft="5dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Phong Ban"
+            android:textColor="#FBF5F5"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="15dp"/>
+    </LinearLayout>
+    <SearchView
+        android:layout_below="@+id/layoutLine"
+        android:id="@+id/searchPhongBan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <ImageView
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="15dp"
+        android:id="@+id/imgAdd"
+        android:layout_below="@+id/layoutLine"
+        android:layout_alignParentRight="true"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/baseline_add_24"
+        android:background="@drawable/boder_view"/>
+    <ListView
+        android:id="@+id/lv_PhongBan"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/imgAdd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</RelativeLayout>

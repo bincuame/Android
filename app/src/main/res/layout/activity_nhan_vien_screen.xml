@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".screen.NhanVienScreen">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#4199C1">
+        <ImageView
+            android:layout_marginLeft="5dp"
+            android:id="@+id/imgReturnNhanVien"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/returner"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nhan Vien"
+            android:textColor="#FBF5F5"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="15dp"/>
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/imgSearchNhanVien"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/search"
+        android:layout_alignParentRight="true"/>
+    <Button
+        android:id="@+id/btnAddNhanVien"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imgSearchNhanVien"
+        android:layout_marginTop="10dp"
+        android:text="Them Nhan Vien"
+        android:textSize="20dp"
+        android:backgroundTint="#9C27B0"/>
+    <ListView
+        android:layout_marginTop="10dp"
+        android:id="@+id/lv_NhanVien"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnAddNhanVien"/>
+</RelativeLayout>
